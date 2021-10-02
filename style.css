@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  display: block;
+  text-align: center;
+}
+
+.value {
+  display: block;
+  margin-bottom: 4rem;
+  font-size: 4rem;
+  color: skyblue;
+}
+
+.btn{
+    height: 50px;
+    width: 150px;
+    margin: auto 2rem;
+    border-radius: 20px;
+    border: 2px solid black;
+    font-size: 1.5rem;
+    letter-spacing: 3px;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+.title{
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+    letter-spacing: .4rem;
+    color: tomato;
+}
