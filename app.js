@@ -9,7 +9,7 @@ const value = document.querySelector(".value");
 
 // add general forEach loop to read the multiple buttons
 btns.forEach(function (btn) {
-  // addd event lu jdh h  lidstener
+  // addd event listener
   btn.addEventListener("click", function (e) {
     const style = e.currentTarget.classList;
     // if statement

@@ -5,10 +5,18 @@
 }
 
 body {
-  height: 50vh;
+  height: 70vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  background: linear-gradient(
+    to right,
+    purple,
+    yellow,
+    white,
+    lightgreen,
+    blue
+  );
 }
 
 .container {
@@ -18,25 +26,41 @@ body {
 
 .value {
   display: block;
-  margin-bottom: 4rem;
   font-size: 4rem;
-  color: skyblue;
 }
 
-.btn{
-    height: 50px;
-    width: 150px;
-    margin: auto 2rem;
-    border-radius: 20px;
-    border: 2px solid black;
-    font-size: 1.5rem;
-    letter-spacing: 3px;
-    text-transform: capitalize;
-    cursor: pointer;
+.btn {
+  display: block;
+  height: 50px;
+  width: 150px;
+  margin: 3rem 2rem;
+  border-radius: 20px;
+  border: 2px solid black;
+  font-size: 1.5rem;
+  letter-spacing: 3px;
+  text-transform: capitalize;
+  cursor: pointer;
+  background: cyan;
+  color: rgb(255, 255, 255);
+  transition: all 0.3s linear;
 }
-.title{
-    text-transform: uppercase;
-    margin-bottom: 2rem;
-    letter-spacing: .4rem;
-    color: tomato;
+
+.btn:hover {
+  color: white;
+  background: black;
+}
+
+.title {
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+  letter-spacing: 0.4rem;
+  color: tomato;
+  font-size: 2rem;
+}
+
+@media screen and (min-width: 746px) {
+  .buttons {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }
